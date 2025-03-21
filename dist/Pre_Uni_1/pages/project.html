@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Projects</title>
+  </head>
+  <body class="bg-[#e6e6e6] dark:bg-black">
+    <header class="w-[100vw]">
+      <nav
+        class="flex flex-row justify-between items-center bg-primary-l10 dark:bg-black dark:border-b-1 dark:border-b-white dark:border-solid text-white pr-10 pl-10"
+      >
+        <a href="../main/index.html"
+          ><img class="w-[120px]" src="../assets/Kenshiro__1_-removebg-preview.png" alt="Logo"
+        /></a>
+        <ul class="flex flex-row gap-10 font-bold text-[20px] text-white">
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/about.html">ABOUT</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/project.html">PROJECTS</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <div class="flex flex-row gap-5">
+          <p class="inline font-bold">Switch Theme</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" />
+            <div id="theme-toggle"
+              class="duration-[0.5s] ease-in-out relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:duration-[0.5s] after:ease-out dark:border-gray-600 peer-checked:bg-gray-500 dark:peer-checked:bg-gray-500"
+            ></label>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h3 class="font-bold text-[50px] text-center pt-10 pb-10 dark:text-white">
+        PROJECTS COMPLETED
+      </h3>
+
+      <section
+        class="grid grid-cols-[repeat(3,350px)] grid-rows-[330px] gap-10 justify-center dark:text-white pb-50 pt-2"
+      >
+        <div class="w1 bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+        <div class="w2 bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+        <div class="w3 bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+        <p class="text-[20px]">
+          Portfolio
+        </p>
+        <p class="text-[20px]">
+          E-Commerce
+        </p>
+        <p class="text-[20px]">
+          Donation Platform
+        </p>
+      </section>
+
+      <section class="h-[100vh]">
+        <h3 class="font-bold text-[50px] text-center pb-10 pt-10 dark:text-white">
+          PROJECTS PENDING
+        </h3>
+        <article
+          class="grid grid-cols-[repeat(3,350px)] grid-rows-[400px] gap-10 justify-center dark:text-white"
+        >
+          <div class=" bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+          <div class=" bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+          <div class=" bg-primary-l10 dark:bg-[#d6d6d6] rounded-md"></div>
+          <p class="text-[20px]">Coming Soon</p>
+          <p class="text-[20px]">Coming Soon</p>
+          <p class="text-[20px]">Coming Soon</p>
+        </article>
+      </section>
+
+      <footer class="w-[100vw] h-[2rem] text-center dark:text-white">
+        <ul class="flex flex-row gap-3 justify-center">
+          <li><a href="https://github.com/meypanhawath" target="_new"><i class="fa-brands fa-github text-[40px] pl-5"></i></a></li>
+          <li><a href="https://discord.com/users/567735156824080401" target="_new"><i class="fa-brands fa-discord text-[40px] pl-5"></i></a></li>
+          <li><a href="mailto:panhawath18@gmail.com" target="_new"><i class="fa-solid fa-envelope text-[40px] pl-5"></i></a></li>
+          <li><a href="https://t.me/definitelynotraz" target="_new"><i class="fa-brands fa-telegram text-[40px] pl-5"></i></a></li>
+        </ul>
+        <p>&copy;2025 Mey Panhawath | All Rights Reserved</p>
+      </footer>
+    </main>
+
+    <script>
+      const htmlElement = document.documentElement;
+      const themeToggleButton = document.getElementById("theme-toggle");
+
+      function applyTheme(theme) {
+        if (theme === "dark") {
+          htmlElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          htmlElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // Set theme on page load
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        applyTheme("dark");
+      }
+
+      // Toggle theme on button click
+      themeToggleButton.addEventListener("click", () => {
+        const currentTheme = htmlElement.classList.contains("dark")
+          ? "light"
+          : "dark";
+        applyTheme(currentTheme);
+        console.log("Theme toggled to", currentTheme);
+      });
+    </script>
+  </body>
+</html>

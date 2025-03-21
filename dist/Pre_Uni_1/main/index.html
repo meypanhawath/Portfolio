@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../../../dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>Portfolio</title>
+  </head>
+  <body class="bg-[#e6e6e6] dark:bg-black">
+    <header class="w-[100vw]">
+      <nav
+        class="flex flex-row justify-between items-center bg-primary-l10 dark:bg-black dark:border-b-1 dark:border-b-white dark:border-solid text-white pr-10 pl-10"
+      >
+        <a href="index.html"
+          ><img class="w-[120px]" src="../assets/Kenshiro__1_-removebg-preview.png" alt="Logo"
+        /></a>
+        <ul class="flex flex-row gap-10 font-bold text-[20px] text-white">
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/about.html">ABOUT</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/project.html">PROJECTS</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="../pages/contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <div class="flex flex-row gap-5">
+          <p class="inline font-bold">Switch Theme</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" />
+            <div id="theme-toggle"
+              class="duration-[0.5s] ease-in-out relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:duration-[0.5s] after:ease-out dark:border-gray-600 peer-checked:bg-gray-500 dark:peer-checked:bg-gray-500"
+            ></label>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-[100vw] h-[100vh] ">
+
+      <section class="flex flex-col items-center w-[70vw] h-[70vh] bg-primary-l10 dark:bg-[#d6d6d6] justify-self-center rounded-[2rem] m-10 pt-10">
+        <article class="w-[70vw] flex flex-row justify-center items-center gap-10 p-5 pb-10">
+          <div
+            class="profile relative m-[20px] h-[15em] w-[15em] rounded-[50%] before:absolute before:contents-[''] before:border-[7px] before:border-dashed before:border-white before:top-[-5px] before:left-[-5px] before:rounded-[50%] dark:before:border-primary-l10"
+          ></div>
+          <h1 class="text-white dark:text-black font-bold text-[80px] justify-self-center">
+            Mey Panhawath
+            <br>
+            <p class="text-[25px]">aka Kenshiro <button class="ml-5 pr-[20px] pl-[20px] border-none cursor-pointer font-bold bg-white text-black text-[25px] dark:bg-black dark:text-white rounded-lg"><a href="https://link.payway.com.kh/ABAPAYLj344139S">Buy me a coffee</a></button></p>
+            
+          </h1>
+        </article>
+
+        <article class="">
+          <p class="text-[50px] font-bold">
+            <span class="js text-white dark:text-black">I'm </span><span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </p>
+        </article>
+      </section>
+
+      <section class="About h-[100vh] ">
+
+        <h2 class="font-bold text-[50px] text-center ml-150 pt-25 dark:text-white">WHAT I DO</h2>
+        <article class="grid grid-cols-[600px_600px] justify-center">
+          <div class="about-me w-[550px] h-[400px] rounded-xl">
+          </div>
+          <p class="self-center dark:text-white text-[20px]">Hi, I'm Mey Panhawath, currently majoring in IT at ISTAD,<br> here is what I do <br><br>
+
+            - Web Development: I enjoy creating dynamic, user-friendly websites that not only look great but also provide engaging experiences. <br><br>
+            - Game Development: Crafting interactive and immersive game environments fuels my drive to push creative boundaries.
+            <br><br>
+            <button class="pt-[10px] pb-[10px] pr-[30px] pl-[30px] border-none cursor-pointer absolute font-bold bg-primary-l10 dark:bg-white dark:text-black text-white rounded-lg hover:scale-120"><a href="../pages/about.html">Read more</a></button>
+          </p>
+        </article>
+        <!-- <div class="Project">hello</div>
+        <div class="Experience"></div>
+        <div class="Skill"></div>
+        <div class=""></div> -->
+      </section>
+
+      <h2 class="font-bold text-[50px] text-center pb-20 dark:text-white pt-15">PROJECTS</h2>
+      <section class="project h-[100vh]">
+      <article class="w-[100vw] h-[50vh] grid grid-cols-[repeat(3,350px)] grid-rows-[repeat(2,200px)] gap-5 place-content-center">
+        <div class="p1 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+        <div class="p2 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+        <div class="p3 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+        <div class="p4 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+        <div class="p5 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+        <div class="p6 bg-primary-l10 text-white text-center rounded-md cursor-pointer"></div>
+      </article>
+      </section>
+
+      <section class="contact h-[100vh]">
+
+          <h2 class="font-bold text-[50px] text-center mr-150 pb-10 dark:text-white">MAKE CONTACT</h2>
+          <article class="grid grid-cols-[600px_500px] gap-10 justify-center">
+          <p class="self-center dark:text-white text-[20px]">I'm excited to hear about your project and explore how we can work together to create something truly exceptional. Feel free to get in touch via the contact form or email me directly.
+            <br> <br>
+            <button class="btn pt-[10px] pb-[10px] pr-[30px] pl-[30px] border-none cursor-pointer absolute font-bold bg-primary-l10 dark:bg-white dark:text-black text-white rounded-lg"><a href="../pages/contact.html">Hire me</button>
+          </p>
+          <div class="contact-pic w-[550px] h-[400px] rounded-xl bg-primary-l10 dark:bg-[#d6d6d6]"></div>
+        </article>
+      </section>
+
+      <footer class="w-[100vw] h-[2rem] text-center dark:text-white">
+        <ul class="flex flex-row gap-3 justify-center">
+          <li><a href="https://github.com/meypanhawath" target="_new"><i class="fa-brands fa-github text-[40px] pl-5"></i></a></li>
+          <li><a href="https://discord.com/users/567735156824080401" target="_new"><i class="fa-brands fa-discord text-[40px] pl-5"></i></a></li>
+          <li><a href="mailto:panhawath18@gmail.com" target="_new"><i class="fa-solid fa-envelope text-[40px] pl-5"></i></a></li>
+          <li><a href="https://t.me/definitelynotraz" target="_new"><i class="fa-brands fa-telegram text-[40px] pl-5"></i></a></li>
+        </ul>
+        <p>&copy;2025 Mey Panhawath | All Rights Reserved</p>
+      </footer>
+    </main>
+
+      <script>
+            const htmlElement = document.documentElement;
+    const themeToggleButton = document.getElementById("theme-toggle");
+
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        htmlElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        htmlElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    // Set theme on page load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      applyTheme("dark");
+    }
+
+    // Toggle theme on button click
+    themeToggleButton.addEventListener("click", () => {
+      const currentTheme = htmlElement.classList.contains("dark") ? "light" : "dark";
+      applyTheme(currentTheme);
+      console.log("Theme toggled to", currentTheme);
+    });
+      </script>
+
+      <script src="app.js"></script>
+
+  </body>
+</html>

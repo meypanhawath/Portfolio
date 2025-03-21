@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>contact</title>
+  </head>
+  <body class="bg-[#e6e6e6]">
+    <header class="w-[100vw]">
+      <nav
+        class="flex flex-row justify-between items-center bg-primary-l10 dark:bg-black dark:border-b-1 dark:border-b-white dark:border-solid text-white pr-10 pl-10"
+      >
+        <a href="../main/index.html"
+          ><img
+            class="w-[120px]"
+            src="../assets/Kenshiro__1_-removebg-preview.png"
+            alt="Logo"
+        /></a>
+        <ul class="flex flex-row gap-10 font-bold text-[20px] text-white">
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="project.html">PROJECTS</a>
+          </li>
+          <li
+            class="decoration-[3px] decoration-white underline-offset-5 hover:underline"
+          >
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <div class="flex flex-row gap-5">
+          <p class="inline font-bold">Switch Theme</p>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" />
+            <div id="theme-toggle"
+              class="duration-[0.5s] ease-in-out relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:duration-[0.5s] after:ease-out dark:border-gray-600 peer-checked:bg-gray-500 dark:peer-checked:bg-gray-500"
+            ></label>
+        </div>
+      </nav>
+
+      <main class="w-[100vw] h-[100vh] dark:bg-black">
+        <section class="flex flex-col items-center">
+
+        
+        <form class="max-w-sm mx-auto pt-20">
+          <label
+            for="email-address-icon"
+            class="block mb-2 text-[30px] font-bold text-gray-900 dark:text-white"
+            >Email</label
+          >
+          <div class="relative">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-"
+            >
+              
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email-address-icon"
+              class="pl-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-300 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="name@gmail.com"
+            />
+          </div>
+        </form>
+
+        <form class="max-w-sm mx-auto pt-10">
+          <label
+            for="message"
+            class="block mb-2 text-[30px] font-bold text-gray-900 dark:text-white"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="pl-5 pt-2 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-300 dark:border-gray-600   dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Leave a message..."
+          ></textarea>
+        </form>
+        <button class="mt-5 pt-[10px] pb-[10px] pr-[30px] pl-[30px] border-none cursor-pointer font-bold bg-primary-l10 dark:bg-white dark:text-black text-white rounded-lg hover:scale-120"><a href="mailto:panhawath18@gmail.com">Hire me</a></button>
+      </section>
+
+      <footer class="w-[100vw] h-[2rem] text-center dark:text-white pt-30 fixed">
+        <ul class="flex flex-row gap-3 justify-center">
+          <li><a href="https://github.com/meypanhawath" target="_new"><i class="fa-brands fa-github text-[40px] pl-5"></i></a></li>
+          <li><a href="https://discord.com/users/567735156824080401" target="_new"><i class="fa-brands fa-discord text-[40px] pl-5"></i></a></li>
+          <li><a href="mailto:panhawath18@gmail.com" target="_new"><i class="fa-solid fa-envelope text-[40px] pl-5"></i></a></li>
+          <li><a href="https://t.me/definitelynotraz" target="_new"><i class="fa-brands fa-telegram text-[40px] pl-5"></i></a></li>
+        </ul>
+        <p>&copy;2025 Mey Panhawath | All Rights Reserved</p>
+      </footer>
+
+      </main>
+      
+    <script>
+      const htmlElement = document.documentElement;
+      const themeToggleButton = document.getElementById("theme-toggle");
+
+      function applyTheme(theme) {
+        if (theme === "dark") {
+          htmlElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          htmlElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // Set theme on page load
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        applyTheme("dark");
+      }
+
+      // Toggle theme on button click
+      themeToggleButton.addEventListener("click", () => {
+        const currentTheme = htmlElement.classList.contains("dark")
+          ? "light"
+          : "dark";
+        applyTheme(currentTheme);
+        console.log("Theme toggled to", currentTheme);
+      });
+    </script>
+  </body>
+</html>
